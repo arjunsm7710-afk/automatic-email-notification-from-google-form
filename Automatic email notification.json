@@ -1,0 +1,95 @@
+{
+  "name": "Automatic email notification",
+  "nodes": [
+    {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyMinute"
+            }
+          ]
+        },
+        "documentId": {
+          "__rl": true,
+          "value": "1XhYIDgqPEnBAb976G5mLkK4xRK188zkGTI-C7l6Ivko",
+          "mode": "list",
+          "cachedResultName": "Untitled form (Responses)",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1XhYIDgqPEnBAb976G5mLkK4xRK188zkGTI-C7l6Ivko/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 406000195,
+          "mode": "list",
+          "cachedResultName": "Form responses 1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1XhYIDgqPEnBAb976G5mLkK4xRK188zkGTI-C7l6Ivko/edit#gid=406000195"
+        },
+        "event": "rowAdded",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheetsTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "a2da1222-e3db-43d3-885d-b3aa8fb1ea49",
+      "name": "Google Sheets Trigger",
+      "credentials": {
+        "googleSheetsTriggerOAuth2Api": {
+          "id": "yVMjh8D7jZBuBS6v",
+          "name": "Google Sheets Trigger account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "sendTo": "arjunsm7710@gmail.com",
+        "subject": "new form submission",
+        "message": "=new submission received !!  NAME::{{ $json[\"name\"] }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.2,
+      "position": [
+        208,
+        0
+      ],
+      "id": "e89853c6-44dc-4f35-adb2-252906032896",
+      "name": "Send a message",
+      "webhookId": "0d990b2e-83cc-4cd2-b21a-bf4581c8c0ca",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "SH0hrAfWMjGGgiGG",
+          "name": "Gmail account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Google Sheets Trigger": {
+      "main": [
+        [
+          {
+            "node": "Send a message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "7f3733c7-63bd-4004-a900-9b2b93d8ef1c",
+  "meta": {
+    "instanceId": "9f5788191be0511cacfb1ed09227f85098b3ce9c7a3c765d2abddbb3e33da504"
+  },
+  "id": "8PTqfE4JjCFAcvrY",
+  "tags": []
+}
