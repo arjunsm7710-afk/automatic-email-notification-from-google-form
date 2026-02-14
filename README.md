@@ -2,13 +2,13 @@
 
 ![Event Banner](./assets/banner.png)
 
-# Title: [Insert Project Name]
+# Title: AUTOMATIC EMAIL NOTIFICATION FROM GOOGLE SHEET RESPONSE
 
 ---
 
 ### Team Members
-* **Member 1:** [Name / GitHub Link]
-* **Member 2:** [Name / GitHub Link]
+* **Member 1:** ARJUN S M
+* **Member 2:** ARDRA S PILLAI
 
 ---
 
@@ -20,27 +20,8 @@
 ### How it Works?
 
 #### 1. Explaining the working of project
-[Describe the logic here.]
+WHEN A NEW USER FILLS THE GOOGLE FORM,IT DETECTS NEW DATA FROM THE USER AND SENDS EMAIL NOTIFICATIION TO THE ORGANIZER.
 
 #### 2. Embed video of project demo
-[Insert link to Video (Youtube/Drive)]
+https://drive.google.com/file/d/1jv__7NtXIqQPj7VVMtSN1NVSpC1gx9K0/view?usp=sharing
 
----
-
-### Libraries
-[Mention the Libraries/Tools Used.]
-
----
-
-### How to configure
-[Explain How to configue.]
-
----
-
-### How to run
-[Explain How to run.]
-
----
-
-### Running the App
-[Running the App on differnet devices.]
